@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400..900;1,6..12,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://hana-dev.com/css/flowbite.min.css">
-    <link rel="stylesheet" href="https://hana-dev.com/css/style.min.css">
+    <link rel="stylesheet" href="https://hana-dev.com/css/flowbite.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://hana-dev.com/css/style.min.css" media="print" onload="this.media='all'">
 </head>
 <body>
     <section class="bg-white dark:bg-stone-900">
@@ -27,7 +27,7 @@
                 </a>
             </div>
             <div class="hidden block lg:col-span-5 lg:flex h-auto max-w-full transition-all duration-300 cursor-pointer filter-none md:grayscale hover:grayscale-0">
-                <img src="https://hana-dev.com/assets/hana-portrait.png" alt="Hana portrait" class="object-cover">
+                <img src="https://hana-dev.com/assets/hana-portrait.webp" loading="lazy" alt="Hana portrait" class="object-cover">
             </div>                
         </div>
     </section>
@@ -121,9 +121,7 @@
             <h2 class="mb-4 text-4xl font-Nunito tracking-wide font-extrabold text-stone-900 dark:text-white">Portfolio</h2>
         </div>
         <div class="gap-8 items-center py-4 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-6 lg:px-6">
-            <div class="bg-slate-50 hover:bg-fuchsia-50 transition-all ease-in-out duration-200">
-                <img class="w-full object-fill" src="https://hana-dev.com/assets/i-cube-Digital-Solutions-mockup.png" alt="Portfolio 1 image">
-            </div>
+            <img class="w-full object-fill border-4 border-slate-200" src="https://hana-dev.com/assets/i-cube-Digital-Solutions-mockup.webp" loading="lazy" alt="Portfolio 1 image">
             <div class="mt-4 md:mt-0">
                 <h3 class="mb-4 text-3xl tracking-wide font-bold text-stone-900 dark:text-white">i-cube Digital Solutions</h3>
                 <p class="mb-6 flex gap-2 flex-wrap justify-start">
@@ -183,9 +181,7 @@
 
         <div class="gap-8 items-start py-4 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-6 lg:px-6">
             <div class="py-8 md:py-0">
-                <div class="bg-slate-50 hover:bg-fuchsia-50 transition-all ease-in-out duration-200">
-                    <img class="w-full object-fill" src="https://hana-dev.com/assets/Proper-ph-mockup.png" alt="Portfolio 2 image">
-                </div>
+                <img class="w-full object-fill border-4 border-slate-200" src="https://hana-dev.com/assets/Proper-ph-mockup.webp" loading="lazy" alt="Portfolio 2 image">
                 <h3 class="my-4 text-3xl tracking-wide font-bold text-stone-900 dark:text-white">Proper.ph</h3>
                 <p class="mb-6 flex gap-2 flex-wrap justify-start">
                     <span
@@ -210,9 +206,7 @@
                 </p>
             </div>
             <div class="py-8 md:py-0">
-                <div class="bg-slate-50 hover:bg-fuchsia-50 transition-all ease-in-out duration-200">
-                    <img class="w-full object-fill" src="https://hana-dev.com/assets/EZY-Lifestyle-mockup.png" alt="Portfolio 3 image">
-                </div>
+                <img class="w-full object-fill border-4 border-slate-200" src="https://hana-dev.com/assets/EZY-Lifestyle-mockup.webp" loading="lazy" alt="Portfolio 3 image">
                 <h3 class="my-4 text-3xl tracking-wide font-bold text-stone-900 dark:text-white">EZY Lifestyle</h3>
                 <p class="mb-6 flex gap-2 flex-wrap justify-start">
                     <span
@@ -249,33 +243,29 @@
         </div>
     </section>
 
-    <footer class="p-4 pt-0 bg-white sm:pb-6  dark:bg-stone-900">
-        <div class="mx-auto max-w-screen-xl lg:px-4">
-            <hr class="mb-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div class="sm:flex sm:items-center items-center sm:justify-between">
-                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://hana-dev.com/" class="hover:underline">Hana</a>. All Rights Reserved.
-                </span>
-                <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-                    <ul class="flex flex-wrap justify-center items-right text-sm text-gray-600 dark:text-gray-400">
+    <footer class="bg-white dark:bg-stone-900">
+        <div class="pt-6 px-4 mx-auto max-w-screen-xl lg:p-6">
+            <div class="py-6 lg:pb-0 sm:flex items-center sm:flex-row-reverse sm:justify-between border-t border-gray-200 dark:border-gray-600">
+                <div class="">
+                    <ul class="mb-4 sm:mb-0 flex flex-wrap flex-col sm:flex-row justify-start items-right gap-6 sm:gap-8 text-sm text-gray-600 dark:text-gray-400">
                         <li>
-                            <a href="https://www.linkedin.com/in/hana-amina-ibe/" target="_blank" rel="nofollow" class="mr-4 hover:underline md:mr-6 ">LinkedIn</a>
+                            <a href="mailto:hello@hana-dev.com" target="_blank" rel="nofollow" class="hover:underline dark:hover:text-gray-200">hello@hana-dev.com</a>
                         </li>
                         <li>
-                            <a href="https://calendly.com/hanaibe/project-consultation-1" target="_blank" rel="nofollow" class="mr-4 hover:underline md:mr-6">Need help?</a>
+                            <a href="https://calendly.com/hanaibe/project-consultation-1" target="_blank" rel="nofollow" class="hover:underline dark:hover:text-gray-200">Need help?</a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/hana-amina-ibe/" target="_blank" rel="nofollow" class="hover:underline dark:hover:text-gray-200">LinkedIn</a>
                         </li>
                     </ul>
                 </div>
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://portfolio-draft.test/" class="hover:underline dark:hover:text-gray-200">Hana</a>. All Rights Reserved.
+                </span>
             </div>
         </div>
     </footer>
 
     <script src="https://hana-dev.com/js/flowbite.min.js"></script>
-    <script>
-        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark')
-        }
-    </script>
+    <script>if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) { document.documentElement.classList.add('dark'); } else { document.documentElement.classList.remove('dark') }</script>
 </body>
 </html>
